@@ -1,7 +1,21 @@
 # stack
 
-Go debug/stack utility functions.
+Go debug/stack utility functions and command line interfaces.
 
+
+## CLI
+
+### stack-minify
+
+The `stack-minify` CLI command accepts text through STDIN and converts all lines
+which have a two-line stack entry format to a single-line minified format.
+
+```sh
+$ cat mystack.txt | stack-minify
+```
+
+
+### Utility functions
 
 ## Minify()
 

@@ -11,7 +11,7 @@ import (
 // Regular expressions for MinifiedStack().
 var (
 	fnlineRegexp   = regexp.MustCompile(`^\s*(.+)\([^\)]+\)$`)
-	filelineRegexp = regexp.MustCompile(`^\s*(.+:\d+).+$`)
+	filelineRegexp = regexp.MustCompile(`^\s*(.+:\d+).*$`)
 )
 
 // Minify returns a condensed version of debug.Stack().
